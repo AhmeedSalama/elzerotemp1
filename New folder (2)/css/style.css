@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+}
+
+:root{
+  --main-color: #10cab7;
+}
+body{
+  font-family: 'Work Sans', sans-serif;
+}
+
+.header{
+ padding: 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container{
+ width: 80%;
+ display: flex;
+ justify-content: space-between;
+ margin-left: auto;
+ margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container-services,.containerr {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container-services,.containerr {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container-services,.containerr {
+    width: 1170px;
+  }
+}
+.container-services{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container{
+ width: 80%;
+ display: flex;
+ justify-content: space-between;
+ margin-left: auto;
+ margin-right: auto;
+}
+.header .container img{
+  width: 60px;
+  margin: 0;
+  padding: 0;
+}
+.icon span{
+  background-color: #333;
+  height: 2px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.icon{
+  width: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.icon span:nth-child(2){
+  width: 50%;
+  transition: 0.5s;
+}
+.icon:hover span:nth-child(2){
+  width:  100%;
+}
+.container ul{
+  list-style: none;
+}
+.links{
+  position: relative;
+}
+.links ul{
+  position: absolute;
+  top: calc( 100% + 10px);
+  background-color: #f6f6f6;
+  right: 0;
+  width: 200px;
+  z-index: 1;
+  display: none;
+}
+.links ul li{
+ margin-bottom: 10px;
+ padding: 10px;
+ 
+}
+.links ul li a{
+  transition: 0.5s;
+  text-decoration: none;
+  color: #333;
+  
+  padding: 15px;
+}
+.links ul li:hover a{
+  padding-left: 25px;
+  
+}
+.links ul::before{
+  content: "";
+    top: -20px;
+    right: 0;
+    position: absolute;
+    border: solid 10px;
+    border-color: transparent transparent #f6f6f6 transparent;
+}
+  
+.links ul li:not(:last-child){
+  border-bottom: solid 1px #ddd;
+}
+.links:hover ul{
+ display: block;
+}
+.landpage{
+  background-image: url(/pexels-pixabay-355747.jpg);
+  background-size:cover ;
+  height: calc(100vh - 64px);
+  position: relative;
+  
+}
+.landpage h1{
+  margin: 0;
+  color: var(--main-color);
+  line-height: 60px;
+  font-weight: bold;
+}
+.container-landpage{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.feature{
+  padding-bottom: 64px;
+  padding-top: 64px;
+
+}
+.feature .container{
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.feature .container .feat{
+  text-align: center;
+  padding: 20px;
+}
+
+.feature .container i {
+  color: var(--main-color);
+}
+
+.feature .container h3{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.special-heading{
+  color: #f6f6f6;
+  font-size: 100px;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+  letter-spacing: -3px;
+}
+.services .containerr{
+ margin-left: auto;
+ margin-right: auto;
+ 
+}
+.special-heading + p{
+margin: -30px 0px 0px 0px;
+text-align: center;
+color: #777;
+
+}
+@media (max-width:812px) {
+  .special-heading{
+    font-size: 80px;
+  }
+  
+}
+.services-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fill ,(300px, 1fr) );
+  gap: 30px;
+  margin-top: 100px;
+  
+}
+.services-content img{
+  width: 200px;
+  height: 200px;
+}
+.services-content i{
+  color: var(--main-color);
+  margin: 0;
+  flex-basis: 60px;
+}
+.col{
+  width: 300px;
+}
+.services-content .serv{
+  margin-bottom: 40px;
+  display: flex;
+}
+.services-content .serv .text{
+  flex: 1;
+}
+.services-content .serv .text h3{
+  margin: 0px 0px 20px 0px;
+}
+.services-content .serv  p{
+  color: #333;
+}
+@media (max-width:747px) {
+  .services-content .serv {
+    display: flex;
+    flex-direction : column;
+    text-align: center;
+  }
+  }
